@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(190, 216, 166, 0.692),
+    rgba(124, 196, 183, 0.557)
+  );
+}
+
+.container {
+  padding-top: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serifd;
+}
+.group_self {
+  display: flex;
+  text-align: center;
+  border: 1px rgb(184, 159, 159) solid;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1200px;
+  max-width: 400px;
+  border-radius: 5px;
+  padding: 20px 0 20px;
+  background-color: #f7f5f5;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.avatar {
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+}
+.avatar img {
+  border-radius: 50%;
+}
+.group_self .avatar .text_span {
+  text-align: left;
+  font-size: 18px;
+}
+.btn_ button {
+  font-size: 16px;
+  border-radius: 10%;
+  width: 150px;
+}
+
+.group_self .btn_ {
+  padding-top: 10px;
+}
+@media (max-width: 768px) {
+  .group_self {
+    flex-direction: row;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .group_self {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .group_self {
+    padding: 20px;
+  }
+}
